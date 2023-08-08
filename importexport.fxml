@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root id="AnchorPane" prefHeight="400.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginsignup.ImportexportController">
+   <children>
+      <BorderPane prefHeight="401.0" prefWidth="600.0">
+         <right>
+            <Pane prefHeight="401.0" prefWidth="599.0" styleClass="login-bg" stylesheets="@design.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="29.0" layoutY="27.0" prefHeight="21.0" prefWidth="389.0" text="Here you can export and import data :" textFill="#030303">
+                     <font>
+                        <Font name="Microsoft Tai Le" size="27.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnexport" layoutX="97.0" layoutY="321.0" mnemonicParsing="false" onAction="#exportdata" prefHeight="19.0" prefWidth="72.0" styleClass="button-design" stylesheets="@design.css" text="Export">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnimport" layoutX="402.0" layoutY="321.0" mnemonicParsing="false" onAction="#importData" prefHeight="31.0" prefWidth="70.0" styleClass="button-design" stylesheets="@design.css" text="Import">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btngetback" layoutX="14.0" layoutY="358.0" mnemonicParsing="false" onAction="#getback" prefHeight="23.0" prefWidth="69.0" styleClass="button-design" stylesheets="@design.css" text="Get back!" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei" size="2.0" />
+                     </font>
+                  </Button>
+                  <ListView fx:id="listview" layoutX="38.0" layoutY="68.0" prefHeight="200.0" prefWidth="516.0" />
+               </children>
+            </Pane>
+         </right>
+      </BorderPane>
+   </children>
+</fx:root>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginsignup.FXML3Controller">
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="-1.0" prefHeight="504.0" prefWidth="777.0" styleClass="login-bg" stylesheets="@design.css">
+         <children>
+            <VBox layoutX="14.0" layoutY="223.0" prefHeight="147.0" prefWidth="111.0" spacing="10.0">
+               <children>
+                  <Label fx:id="lableword" text="Word">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="200.0" prefWidth="200.0" />
+                  <Label fx:id="labeltype" text="Type">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="0.0" prefWidth="153.0" />
+                  <Label fx:id="labeltraduction" prefHeight="36.0" prefWidth="73.0" text="Traduction">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="497.0" prefWidth="345.0" />
+                  <Label fx:id="labelexample" text="ExampleFrEn">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="113.0" layoutY="210.0" prefHeight="177.0" prefWidth="207.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="tfword" layoutX="10.0" layoutY="10.0" prefHeight="15.0" prefWidth="207.0" styleClass="text" stylesheets="@design.css" />
+                  <TextField fx:id="tftype" layoutX="10.0" layoutY="35.0" styleClass="text" stylesheets="@design.css" />
+                  <TextField fx:id="tfexample" layoutX="10.0" layoutY="85.0" styleClass="text" stylesheets="@design.css" />
+                  <TextField fx:id="tftraduction" layoutX="10.0" layoutY="60.0" prefHeight="29.0" prefWidth="211.0" styleClass="text" stylesheets="@design.css" />
+               </children>
+            </VBox>
+            <TableView fx:id="tvword" layoutX="352.0" layoutY="92.0" prefHeight="320.0" prefWidth="411.0" styleClass="textfield-design" stylesheets="@design.css">
+               <columns>
+                  <TableColumn fx:id="collid" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="collword" text="Word" />
+                  <TableColumn fx:id="colltype" prefWidth="83.0" text="Type" />
+                  <TableColumn fx:id="colltraduction" prefWidth="87.0" text="Traduction" />
+                  <TableColumn fx:id="collexample" prefWidth="88.0" text="ExampleFrEn" />
+               </columns>
+            </TableView>
+            <Button fx:id="btnInsert" layoutX="82.0" layoutY="439.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="62.0" styleClass="button-design" stylesheets="@design.css" text="insert" />
+            <Button fx:id="btnUpdate" layoutX="149.0" layoutY="439.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="29.0" prefWidth="73.0" styleClass="button-design" stylesheets="@design.css" text="Update" />
+            <Button fx:id="btnDelete" layoutX="233.0" layoutY="439.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="73.0" styleClass="button-design" stylesheets="@design.css" text="Delete" />
+            <Button fx:id="btnsearch" layoutX="185.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="29.0" prefWidth="62.0" styleClass="button-design" stylesheets="@design.css" text="Search" />
+            <TextField fx:id="text" layoutX="26.0" layoutY="102.0" />
+            <Label layoutX="26.0" layoutY="73.0" prefHeight="29.0" prefWidth="139.0" text="Traduction to french ">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnswitch" layoutX="260.0" layoutY="100.0" mnemonicParsing="false" onAction="#switchfr" styleClass="button-design" stylesheets="@design.css" text="Switch" />
+            <Label layoutX="14.0" layoutY="176.0" text="Enter the word you want to update :" />
+            <Button layoutX="14.0" layoutY="439.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="59.0" styleClass="exit" stylesheets="@design.css" text="Exit!" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

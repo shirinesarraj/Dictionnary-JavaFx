@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 avr. 2023, 22:47:38
+    Author     : Hp
+*/
+
+
+.login-bg {
+    -fx-background-color: linear-gradient(to bottom right , #ffc1ed, #426fb1);
+    
+}
+
+.login-card {
+    -fx-background-color: #30353f;
+}
+
+.textfield-design
+{
+    -fx-background-color: #ffc1ed;
+    -fx-background-radius:20px;
+    -fx-border-color: #30363f;
+    -fx-border-radius:20px;
+    -fx-text-inner-color:#000;
+}
+.button-design
+{
+    -fx-background-color: #30363f;
+    -fx-background-radius:40px;
+    -fx-text-fill:#fff;
+    -fx-cursor:hand;
+}
+
+.button-design:hover{
+    -fx-background-color: #6a9ae7;
+}
+
+.hybertext-design {
+    -fx-text-fill:#fff;
+    -fx-border-color:none;
+    -fx-border-width:0px;
+    
+}
+
+.marco{
+    -fx-text-fill : #ffc1ed;
+    -fx-cursor:hand;
+}
+.exit
+{
+    -fx-background-color: #e05a61;
+    -fx-cursor: hand;
+    -fx-background-radius: 50px;
+}
+.exit:hover{
+    -fx-background-color: #f48188;
+}
+
+.text 
+{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: linear-gradient(to bottom right , #3a4f93 , #a42189);
+    -fx-border-radius: 5px;
+    -fx-font-size :15px;
+}
+
+.table-view {
+    -fx-background-color: #f4f4f4;
+}
+
+.table-row-cell {
+    -fx-background-color: #ffffff;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #c6c6c6;
+}
